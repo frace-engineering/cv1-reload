@@ -1,0 +1,122 @@
+body{
+    font-size:0.7rem;
+    margin-left:0px; 
+    margin-top:0;
+    font-family:sans-serif; 
+    /* background-color: rgba(157, 16, 16, 1);   */
+}
+img{
+    display:none;
+}
+.container{
+    display:flex;
+    background-color: rgba(157, 16, 16, 1);   
+    padding-left: 25px;
+    width:600px;
+    padding-right: 0%;
+}
+.container ul{
+    font-size: 0.65rem;
+}
+.column1{
+    width:180px;
+    background-color:#eee;
+    margin-left: 4px;
+    padding-left: 5px;
+    padding-right: 3px;
+
+}
+.column2{
+    padding-left:5px;
+    background-color: #fff;
+    width:420px;
+    margin-left:0%;
+    padding-right: 65px;
+}
+#language{
+    padding-top: 0%;
+    padding-bottom: 0;
+    display:flex;
+    justify-content: space-between;
+}
+#language #bullets p{
+    font-size:2.2rem;
+    color:rgba(156, 16, 16, 1);;
+    line-height: 0rem;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+#language #lingustic p{
+    font-size:0.7rem;
+    line-height: 1.4rem;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+/* #language #lingustic{
+    font-size:0.7rem;
+    line-height: 1.2rem;
+} */
+.column1 ul{
+    padding-inline-start: 15px;
+    padding-top: 0px;
+
+}
+.column1 ul li::marker{
+    color:rgba(156, 16, 16, 1);;
+    font-size: 1.2rem;
+}
+.column1 ul li{
+    list-style-type:square;
+    margin-left:5px;
+    padding-top: 0px;
+}
+.column1 h2{
+    color:rgba(157, 16, 16, 1);
+    padding-bottom: 0px;
+    font-weight: 200;
+    margin-bottom: 0px;
+}
+
+.column2 ul{
+    padding-inline-start: 14px;
+
+}
+.column2 h2{
+    color:rgba(157, 16, 16, 1);
+    padding-top: 5px;
+    font-weight: 200;
+}
+.column2  span{
+    float:right;
+    color:rgba(150, 16, 10, 1);
+    margin-right:2px;
+    font-size: 10px;
+}
+.column2 .header p{
+    font-size: 0.7rem;
+}
+.column2 .header p::first-line{
+    /*margin-top:30px;*/
+    font-size:1.2rem;
+    font-weight:700;
+    padding-top:50px;
+    color:rgba(156, 16, 16, 1);
+}
+.column1, .column2{
+    padding-top: 20px;
+}
+.column1 h1{
+    color:rgba(156, 16, 16, 1);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    word-spacing: 8px;
+    font-weight: 200;
+}
+hr{
+    opacity:0.1;
+}
+i{
+    padding-right: 8px;
+    color:rgba(156, 16, 16, 1);
+    font-size: 1rem;
+}
