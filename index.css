@@ -162,7 +162,7 @@ ul{
     flex-direction: column;
     flex-wrap:wrap;
 }
-@media (max-width:500px){
+@media (max-width:300px){
     .column1{
         display:flex;
         flex-direction: column;
