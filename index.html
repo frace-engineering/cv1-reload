@@ -5,48 +5,56 @@
         <meta name="viewport" content="width=device-width initial-scale=1.0">
         <title>My first project</title>
         <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link rel="stylesheet" href="lesson.css">
+    <script src="https://kit.fontawesome.com/d8ebe6d82c.js" crossorigin="anonymous"></script>
     </head>
     <body>
        <div class="container">
             <div class="column1">
-                <h1>Persinal details</h1>
+                <h1 style="margin-left:.4rem">Persinal details</h1>
+                <ul class="fa-ul" id="ul" style="--fa-li-width:1.7rem; --fa-li-margin:1.7rem">
+                    <li><span class="fa-li"><i class="fas fa-user-alt"></i></span>Ugwu Friday Bathlomew</li>
+                    <li><span class="fa-li"><i class="fa fa-envelope"></i></span>fugwungene@gmail.com</li>
+                    <li><span class="fa-li"><i class="fa fa-phone-alt"></i></span>+234 803 472 1134</li>
+                    <li><span class="fa-li"><i class="fa fa-home"></i></span># 210 Agbani Road Enugu.</li>
+                </ul>
+                <!-- <h1>Persinal details</h1>
                   <p><i class='fas fa-user-alt'></i>Ugwu Friday Bathlomew</p>
                   <P><i class='fa fa-envelope'></i>fugwungene@gmail.com</p>
                    <p><i class='fas fa-phone-alt'></i>+234 803 472 1134</p>
-                  <p><i class='fa-solid fa-house-chimney'></i># 210 Agbani Road Enugu.</p>
+                  <p><i class='fa-solid fa-house-chimney'></i># 210 Agbani Road Enugu.</p> -->
                 <h2>Languages</h2><hr>
                 <div id="language">
-                    <div id="lingustic">
-                        <p>English</p>
-                        <p>German</p>
-                        <p>Spanish</p>
-                    </div>
-                    <div id="bullets">
-                        <p> <span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span></p>
-                        <p><span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span></p>
-                        <p><span>&#149;</span><span>&#149;</span><span>&#149;</span><span style="color:#aaa">&#149;</span><span style="color:#aaa">&#149;</span></p>
-                    </div>
+                    <ul id="lingustic" class="fa-ul" style="--fa-li-margin:.1rem;">
+                        <li><span class="fa-li"></span>English</li>
+                        <li>German</li>
+                        <li>Spanish</li>
+                    </ul>
+                    <ul id="bullets" class="fa-ul" style="margin-inline-start: 1rem;">
+                        <li> <span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span></li>
+                        <li><span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span><span>&#149;</span></li>
+                        <li><span>&#149;</span><span>&#149;</span><span>&#149;</span><span style="color:#aaa">&#149;</span><span style="color:#aaa">&#149;</span></li>
+                    </ul>
                 </div>
                <div id="skills">
                  <h2>Skills</h2><hr>    
-                    <ul>
-                        <li>Methodologies: PRINCEZ2, waterfall</li>
-                        <li>Software: JIRA, connfluence</li>
-                        <li>Cost control: Avoided budget overspending by &pound;50k on a construction project by monitoring cost.</li>
-                        <li>Time management: Prioritizing the most sensitive tasks according to business requirements</li>
-                        <li>Communication: Negotiated new supplier contracts on housing development projects</li>
+                    <ul class="fa-ul" style="--fa-li-width:.8rem; --fa-li-margin:.8rem;">
+                        <li><span class="fa-li"><i class="fas fa-square"></i></span> Methodologies: PRINCEZ2, waterfall</li>
+                        <li><span class="fa-li"><i class="fas fa-square"></i></span>Software: JIRA, connfluence</li>
+                        <li><span class="fa-li"><i class="fas fa-square"></i></span>Cost control: Avoided budget overspending by &pound;50k on a construction project by monitoring cost.</li>
+                        <li><span class="fa-li"><i class="fas fa-square"></i></span>Time management: Prioritizing the most sensitive tasks according to business requirements</li>
+                        <li><span class="fa-li"><i class="fas fa-square"></i></span>Communication: Negotiated new supplier contracts on housing development projects</li>
                     </ul>
                 </div>
                 <div class="pro">
-                    <h2 id="proafi" style="font-size:14px">Professional Affiliations </h2> <hr>
+                    <h2 id="proafi" >Professional Affiliations </h2> <hr>
                     <p>Member of the project Management institute (PMI)<br>
                         2015 - present</p>
                 </div>
-                <div>
+                <div id="hobbies">
                     <h2>Hobbies</h2>
-                    <ul>
-                         <li>Hosting meet up events for expat. Organising quizzes and parties, managing all bookings, venue and participants.</li>
+                    <ul class="fa-ul" style="--fa-li-width:.8rem; --fa-li-margin:.8rem">
+                         <li><span class="fa-li"><i class="fas fa-square"></i></span>Hosting meet up events for expat. Organising quizzes and parties, managing all bookings, venue and participants.</li>
                     </ul>
                 </div>
             </div>
@@ -62,39 +70,41 @@
                 </div>
                 <div id="employment">
                      <h2>Employment</h2><hr> 
-                        <p> Construction project manager<span>Aug 2017 - Sep 2021</span><br>
+                        <ul class="fa-ul" style="--fa-li-width:0px; --fa-li-margin:0rem">
+                            <p>Construction project manager<span>Aug 2017 - Sep 2021</span><br>
                             Skale Care Homes, Sheffield</p>
-                        <ul>
-                            <li>Managed and developed a project to build 5 care homes across Sheffield, each worth uo to &pound;50k and 3,00 sq ft in size</li>
-                            <li>Oversaw the construction and installation of housing foundations, including roofing, water, and heating systems.</li>
-                            <li>Managed Aprox 50 contractors for the project</li> 
+                            <li><span class="fa-li"><i class="fa fa-circle"></i></span>Managed and developed a project to build 5 care homes across Sheffield, each worth uo to &pound;50k and 3,00 sq ft in size</li>
+                            <li><span class="fa-li"><i class="fa fa-circle"></i></span>Oversaw the construction and installation of housing foundations, including roofing, water, and heating systems.</li>
+                            <li><span class="fa-li"><i class="fa fa-circle"></i></span>Managed Aprox 50 contractors for the project</li> 
                         </ul>
                 </div>
                 <div id="rail">
-                    <p>Rail project manager<span>Sep 2012 - Jul 2017</span><br>
-                    Seven Rail, Bristol</p>
-                    <ul>
-                         <li>Led a team of 60 to install a new 1M rail system in Bristol</li>
-                         <li>Created a risk log and safety protocols</li>
-                         <li>Reduced 50k budget overspending by negotiating new supplier contracts</li>
-                         <li>Completed project two months ahead of schedule</li>
+                    
+                    <ul class="fa-ul" style="--fa-li-width:0px; --fa-li-margin:0rem">
+                        <p>Rail project manager<span>Sep 2012 - Jul 2017</span><br>
+                            Seven Rail, Bristol</p>
+                         <li><span class="fa-li"><i class="fa fa-circle"></i></span>Led a team of 60 to install a new 1M rail system in Bristol</li>
+                         <li><span class="fa-li"><i class="fa fa-circle"></i></span>Created a risk log and safety protocols</li>
+                         <li><span class="fa-li"><i class="fa fa-circle"></i></span>Reduced 50k budget overspending by negotiating new supplier contracts</li>
+                         <li><span class="fa-li"><i class="fa fa-circle"></i></span>Completed project two months ahead of schedule</li>
                     </ul>
                 </div>
                 <div id="housing">
-                    <p>Housing development project manager<span>Aug 2008 - Aug 2012</span><br>
-                    ATC company, London</p>
-                    <ul>
-                        <li>Project-managed the development of a housing estate in Greenwich, including the strategy, site assessment and construction</li>
-                        <li>Communicated with property owners and suppliers to gather requirements</li>
-                        <li>Established safety and standard operating procedures</li>
+                    
+                    <ul class="fa-ul" style="--fa-li-width:0px; --fa-li-margin:0rem">
+                        <p>Housing development project manager<span>Aug 2008 - Aug 2012</span><br>
+                            ATC company, London</p>
+                        <li><span class="fa-li"><i class="fa fa-circle"></i></span>Project-managed the development of a housing estate in Greenwich, including the strategy, site assessment and construction</li>
+                        <li><span class="fa-li"><i class="fa fa-circle"></i></span>Communicated with property owners and suppliers to gather requirements</li>
+                        <li><span class="fa-li"><i class="fa fa-circle"></i></span>Established safety and standard operating procedures</li>
                     </ul>
                 </div>
                 <div class="education">
                     <h2>Education</h2><hr>
-                    <ul> MSc Supply Chain Management <span>Sep 2007 - Jul 2008</span><br>
+                    <ul class="fa-ul" style="--fa-li-width:0px; --fa-li-margin:0rem"> MSc Supply Chain Management <span>Sep 2007 - Jul 2008</span><br>
                          Distinction
-                        <li>University of hertfordshire, Hatfeld, Hertfordshire.</li>
-                        <li> Modules included: Financial control, inventory management, human resources management, sustainable business management.</li>
+                        <li><span class="fa-li"><i class="fa fa-circle"></i></span>University of hertfordshire, Hatfeld, Hertfordshire.</li>
+                        <li><span class="fa-li"><i class="fa fa-circle"></i></span> Modules included: Financial control, inventory management, human resources management, sustainable business management.</li>
                     </ul>
                 </div>
                 <div class="business">

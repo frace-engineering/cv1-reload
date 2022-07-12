@@ -14,23 +14,30 @@ img{
     padding-left: 25px;
     width:600px;
     padding-right: 0%;
+    flex:1 1;
 }
 .container ul{
-    font-size: 0.65rem;
+    font-size: 0.7rem;
 }
 .column1{
-    width:180px;
+    display:flex;
+    flex-direction: column;
+    width:220px;
+    flex:1 1;
     background-color:#eee;
     margin-left: 4px;
     padding-left: 5px;
     padding-right: 3px;
-
+}
+#ul li{
+    padding-bottom:1rem;
 }
 .column2{
-    padding-left:5px;
+    display:flex;
+    flex-direction: column;
+    padding-inline:11px;
     background-color: #fff;
     width:420px;
-    margin-left:0%;
     padding-right: 65px;
 }
 #language{
@@ -38,38 +45,36 @@ img{
     padding-bottom: 0;
     display:flex;
     justify-content: space-between;
+    align-items:flex-start;
 }
-#language #bullets p{
-    font-size:2.2rem;
+
+#language #bullets li{
+    font-size:2rem;
     color:rgba(156, 16, 16, 1);;
     line-height: 0rem;
     margin-top: 10px;
+    list-style-type:none;
     margin-bottom: 25px;
 }
-#language #lingustic p{
+#language #lingustic li{
+   margin-left:.2rem;
+}
+#language #lingustic li{
     font-size:0.7rem;
     line-height: 1.4rem;
+    list-style-type:none;
     margin-top: 0px;
     margin-bottom: 4px;
 }
-/* #language #lingustic{
-    font-size:0.7rem;
-    line-height: 1.2rem;
-} */
-.column1 ul{
+#language #lingustic{
+   padding-left: 0rem;
+   margin-left:0rem;
+}
+/* .column1 ul{
     padding-inline-start: 15px;
     padding-top: 0px;
 
-}
-.column1 ul li::marker{
-    color:rgba(156, 16, 16, 1);;
-    font-size: 1.2rem;
-}
-.column1 ul li{
-    list-style-type:square;
-    margin-left:5px;
-    padding-top: 0px;
-}
+} */
 .column1 h2{
     color:rgba(157, 16, 16, 1);
     padding-bottom: 0px;
@@ -77,8 +82,13 @@ img{
     margin-bottom: 0px;
 }
 
-.column2 ul{
-    padding-inline-start: 14px;
+/* .column2 ul{
+    padding-inline-start:1px;
+
+} */
+.column2 ul li{
+    /* margin-top:0px; */
+    padding-inline-start: 1.3rem;
 
 }
 .column2 h2{
@@ -95,7 +105,7 @@ img{
 .column2 .header p{
     font-size: 0.7rem;
 }
-.column2 .header p::first-line{
+.column2 .header  p::first-line{
     /*margin-top:30px;*/
     font-size:1.2rem;
     font-weight:700;
@@ -119,4 +129,67 @@ i{
     padding-right: 8px;
     color:rgba(156, 16, 16, 1);
     font-size: 1rem;
+}
+.column1 ul li{
+    padding-left:0px;
+}
+
+#skills ul li{
+    padding-bottom:1rem;
+}
+#skills ul li i{
+    font-size:.54rem;
+}
+#hobbies ul li i{
+    font-size:.54rem;
+}
+p{
+    font-size: 0.7rem;
+    /* margin-left: 0rem; */
+    margin-bottom:0px;
+}
+.column2 ul li i{
+    font-size:.2rem;
+}
+.column2 ul{
+    padding-bottom:.7rem;
+}
+p::first-line{
+    color:rgba(156, 16, 16, 1);
+}
+ul{
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+}
+@media (max-width:500px){
+    .column1{
+        display:flex;
+        flex-direction: column;
+        width:20%;
+        background-color:#eee;
+        margin-left: 3px;
+        padding-left: 5px;
+        padding-right: 3px;
+    }
+    
+    .column2{
+        display:flex;
+        flex-direction: column;
+        padding-inline:11px;
+        background-color: #fff;
+        width:50%;
+        padding-right: 30%;
+    }
+    ul li{
+       font-size: .5rem;
+    }
+    p{font-size: .6rem;
+    }
+    h2{
+        font-size: .7rem;
+    }
+    h1{
+        font-size: .7rem;
+    }
 }
